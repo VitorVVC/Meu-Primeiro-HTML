@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Vitor Vargas</title>
+
+    <style>
+        .mensagem-azul-sublinhada {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="home">
+        <h1>Vitor Vargas </h1>
+        <p><strong>Nascimento: </strong>19/04/2005</p>
+        <p><strong>Email: </strong>vitorvvc2005@gmail.com</p>
+        <p><strong>Telefone: </strong>(41) 99937-1713</p>
+
+        <p>Olá, sou Vitor Vargas Cardoso, um entusiasta de 18 anos apaixonado por Ciências da Computação, atualmente cursando na UNIFOR. Meu foco é me tornar um desenvolvedor back-end de sucesso, especialmente em Java. Além disso, estou ampliando minha visão ao explorar conteúdos fullstack para ser um profissional versátil..<br><a href="#conteudo-biografia" id="leiamais">Leia mais</a></p>
+    </section>
+
+    <div class="conteudo-biografia">
+        <h2>Biografia Detalhada</h2>
+        <p>Olá, sou Vitor Vargas Cardoso, um entusiasta de 18 anos apaixonado por Ciências da Computação. Atualmente, estou imerso no curso de Ciências da Computação na UNIFOR, onde busco não apenas conhecimento acadêmico, mas também o desenvolvimento das habilidades necessárias para me tornar um desenvolvedor back-end de sucesso, especialmente na linguagem Java.
+˜            Minha jornada acadêmica tem sido marcada pelo comprometimento em adquirir uma sólida base técnica, mas não me limito apenas a isso. Reconheço a importância da versatilidade no mundo da tecnologia, razão pela qual tenho direcionado esforços ao estudo de conteúdos relacionados a fullstack. Acredito que essa abordagem ampla me permitirá ser um profissional mais completo, capaz de enfrentar os desafios dinâmicos do desenvolvimento de software.
+            Meu objetivo vai além de conquistar diplomas; almejo destacar-me como desenvolvedor, alcançar reconhecimento na área e construir uma extensa rede de contatos. Estou animado para explorar novas oportunidades, contribuir para projetos desafiadores e, ao mesmo tempo, aprender e evoluir constantemente. Estou confiante de que minha paixão, dedicação e sede de conhecimento são as bases sólidas para uma carreira promissora no universo da tecnologia.</p>
+
+    </div>
+
+
+    <hr>
+
+    <section id="summary">
+        <h1>Sumário</h1>
+        <li><a href="#endereco">Endereço</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#formacaoAcademica">Formação Acadêmica</a></li>
+        <li><a href="#linksUteis">Links Uteis</a></li>
+    </section>
+
+
+    <hr>
+    <section id="endereco">
+        <h2><a href="#endereco">Endereco</a></h2>
+        <p><strong>Rua:</strong> Av. José moraes de almeida</p>
+        <p><strong>Cidade:</strong> Eusebio, CE</p>
+        <p><strong>Bairro:</strong> Coaçu</p>
+        <a href="#home" class="mensagem-azul-sublinhada">topo</span></a>
+    </section>
+
+    <hr>
+    <section id="experiencia">
+        <h2><a href="#experiencia">Experiência</a></h2>
+        <p><a href="">Bitness Analyitcas</a></p>
+        <ul>
+            <li>Full Stack</li>
+            <li>2021 - 2022</li>
+            </li>
+        </ul>
+        <a href="" class="mensagem-azul-sublinhada">topo</a>
+    </section>
+
+    <section id="competencias">
+        <h2> <a href="#competencias">Competências</a></h2>
+        <hr>
+        <ul>
+            <li>JAVA | Spring Boot | Hibernate | Mongo DB | JavaFX</li>
+            <li>Git & Github </li>
+            <li>HTML5 | CSS3 | JavaScript</li>
+        </ul>
+        <a href="" class="mensagem-azul-sublinhada">topo</a>
+        <h2> <a href="#formacaoAcademica">Formação Acadêmica</a></h2>
+        <hr>
+    </section>
+
+    <section id="formacaoAcademica">
+        <p><a href="https://www.unifor.br">Universidade De Fortaleza</a></p>
+        <p>Bacharelado em ciências da computaçãoa</p>
+        <p>2023 - Atual</p>
+        <p><a href="https://digitalcollege.com.br">Digital College</a></p>
+        <p>Curso Desenvolvimento WEB FullStack</p>
+        <p>2023 - Atual</p>
+        <a href="" class="mensagem-azul-sublinhada">topo</a>
+        <hr>
+    </section>
+    <!-- teste comentario -->
+
+
+    <section id="linksUteis">
+        <p><a href="#linkUteis">Links Uteis</a></p>
+        <ul>
+            <li><a href="https://www.instagram.com/vitovrgscr/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/vitor-cardoso-3a550326a/">Linkedin</a></li>
+            <li><a href="https://github.com/VitorVVC">Github</a></li>
+            <li><a href="https://www.youtube.com/channel/UCZF8J7bFqu_gQ9cNI5ZWdqA">Youtube</a></li>
+
+        </ul>
+        <p>&copy; 2023</p>
+    </section>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var leiamaisLink = document.getElementById('leiamais');
+            var conteudoBiografia = document.querySelector('.conteudo-biografia');
+            // Adiciona um ouvinte de evento de clique ao link "Leia mais"
+            leiamaisLink.addEventListener('click', function () {
+                // Alterna a visibilidade da seção de biografia
+                if (conteudoBiografia.style.display === 'none' || conteudoBiografia.style.display === '') {
+                    conteudoBiografia.style.display = 'block';
+                } else {
+                    conteudoBiografia.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
